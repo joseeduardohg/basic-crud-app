@@ -16,7 +16,7 @@ In order to use this repository, you need to have installed the following:
 - git
 - node
 - pnpm
-- docker (Docker Desktop if your using Windows)
+- docker (Docker Desktop if your using Windows or macOS)
 
 ## Installation
 
