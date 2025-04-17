@@ -33,7 +33,7 @@ account, and then clone it.
 5. You can follow the [Clone the Repository section](#clone-the-repository) to
    clone the repository.
 
-### [Clone the Repository](#clone-the-repository)
+### Clone the Repository
 
 To install the project in your local environment:
 
