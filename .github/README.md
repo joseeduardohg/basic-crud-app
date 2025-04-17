@@ -1,3 +1,8 @@
+Languages
+
+English |
+[Español](https://github.com/joseeduardohg/basic-crud-app/tree/main/.github/README.es.md)
+
 # Basic CRUD APP
 
 This is sample Single Page Application project to demonstrate how to connect a
@@ -25,12 +30,11 @@ account, and then clone it.
 
 ### Fork the Repository
 
-1. Go to the
-   [repository page in GitHub](https://github.com/joseeduardohg/basic-crud-app).
+1. Go to the [repository page in GitHub][repopage].
 2. Click on _Fork_ button.
 3. Enter the name of your new repository.
 4. Click on _Create fork_ button.
-5. You can follow the [Clone the Repository section](#clone-the-repository) to
+5. You can follow the [_Clone the Repository_ section](#clone-the-repository) to
    clone the repository.
 
 ### Clone the Repository
@@ -40,8 +44,8 @@ To install the project in your local environment:
 1. Open a terminal (Windows Terminal, Git Bash...).
 2. Navigate to the desired location for the project using `cd`. For example,
    `cd ~/code/practices/`.
-3. Go to the GitHub page of repository (either the original or the one you
-   forked).
+3. Go to the GitHub page of repository (either the [original][repopage] or the
+   one you forked).
 4. Select the _Code_ button and copy the _HTTPS_ link.
 5. Clone the repository as follows:
 
@@ -72,3 +76,5 @@ To install the project in your local environment:
    ```
 
 ## Usage
+
+[repopage]: https://github.com/joseeduardohg/basic-crud-app
