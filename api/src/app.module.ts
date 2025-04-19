@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
+import { TypeOrmConfigService } from './config/database.config';
 import { validate } from './env.validation';
 import { UsersModule } from './users/users.module';
 
@@ -13,15 +14,9 @@ import { UsersModule } from './users/users.module';
       isGlobal: true,
       validate,
     }),
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: 'root',
-      database: 'test',
-      entities: [],
-      synchronize: true, // Note: set to false in production
+    TypeOrmModule.forRootAsync({
+      imports: [ConfigModule],
+      useClass: TypeOrmConfigService,
     }),
     UsersModule,
     AuthModule,
