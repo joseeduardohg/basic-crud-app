@@ -19,9 +19,16 @@ export class AuthService {
       throw new UnauthorizedException('The username or password is incorrect');
     }
 
-    const payload: JwtPayload = { sub: user.id, username: user.username };
     return {
-      access_token: await this.jwtService.signAsync(payload),
+      access_token: await this.generateAccessToken(user.id, user.username),
     };
+  }
+
+  private async generateAccessToken(
+    id: number,
+    username: string,
+  ): Promise<string> {
+    const payload: JwtPayload = { sub: id, username };
+    return this.jwtService.signAsync(payload);
   }
 }
