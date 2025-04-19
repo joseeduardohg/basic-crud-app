@@ -17,5 +17,7 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false
-  }
+  },
+  "include": ["**/*.ts"],
+  "files": ["./src/types/express/index.d.ts"]
 }
